@@ -1,0 +1,78 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  margin: 0;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 25px;
+  width: 260px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.box:hover img {
+  transform: scale(1.05);
+}
+
+.box p {
+  margin: 10px 0;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.box div {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #ff6f61; 
+  font-size: 1.3em;
+}
+
+
+.box:hover::before {
+  opacity: 0;
+}
+
+
+.box h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+
+.box p, .box div, .box h3 {
+  transition: color 0.3s ease;
+}
+
+.box:hover p, .box:hover div, .box:hover h3 {
+  color: #555;
+}
+
